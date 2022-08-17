@@ -21,7 +21,7 @@ video{
     mix-blend-mode: overlay;
 }
 .promo{
-    padding-top: 350px;
+    padding-top: 310px;
     position: relative;
     z-index: 2;
     display: flex;
@@ -30,7 +30,27 @@ video{
     flex-direction: column;
     margin: auto;
 }
-h1, p{
-    color: white;
+.promo1{
+    padding-top: 50px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
     
+}
+
+p{
+    color: white;
+}
+.colort{
+    color:#45c8e9;
+}
+.nav-item:hover{
+    border-bottom: 2px solid white;
+}
+.botonvisitanos{
+    background-color: rgb(242, 235, 236);
 }

@@ -2,7 +2,6 @@ import {productosBD} from '../helpers/database.js'
 import { pintarProductos } from './controladorPintar.js'
 export function buscarProductos(){
     //controlar el input donde escribe el usuario
-
     let buscador=document.getElementById("busqueda")
 
     //detectamos que el usuario escribe y capturamos lo 

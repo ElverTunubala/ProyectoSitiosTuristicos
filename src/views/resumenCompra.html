@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <!-- header menu-->
+    <header class="animate__animated animate__backInLeft, menu">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Super Autos</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="../../nuestrosautos.html">Nuestros Autos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contactanos</a>
+                  </li>
+                </ul>
+
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="">
+                      <i class="bi bi-cart fs-3"></i></a>
+                      <span class="position-absolute top-0 start-5 mt-5 translate-middle badge rounded-pill bg-danger" id="bolita">
+                       
+                        
+                      </span>
+                  </li>
+                  
+
+                  
+                </ul>
+
+
+              </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container my-5" id="contenedor">
+            <!-- <div class="row justify-content-center">
+                <div class="col-12 col-md-6 border-ends">
+                    <img src="../../assets/img/carrovacio.jpg" alt="" class="img-fluid w-100">
+
+                </div>
+
+                <div class="col-12 col-md-3 text-center mt-4 aling-self-center">
+                    <h4>Tu carrito esta vacio</h4>
+                    <a href="" class="btn btn-primary w-100">Ir a la tienda</a>
+
+                </div>
+            </div> -->
+        </div>
+
+        <div class="container mb-5">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-3 text-center">
+
+               <button type="button" class="btn btn-primary" id="botonlimpiar"><i class="bi bi-trash"></i>Limpiar</button>
+
+            </div>
+
+          </div>
+
+        </div>
+    </main>
+
+    <!-- fin menu -->
+
+
+
+
+    <script src="../controllers/controladorPintarCantidad.js"></script>
+    <script src="../controllers/controladorResumenCompra.js" type="module"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

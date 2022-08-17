@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(4, 4, 4);
+    
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.loading{
+    background-image: url("https://acegif.com/wp-content/uploads/loading-62.gif");
+    background-size:100%;
+    width: 900px;
+    height: 600px;
+    margin: auto;
+}
