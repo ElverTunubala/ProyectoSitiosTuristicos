@@ -10,8 +10,9 @@ body{
 }
 .loading{
     background-image: url("https://acegif.com/wp-content/uploads/loading-62.gif");
-    background-size:100%;
-    width: 900px;
-    height: 600px;
+    background-size:cover;
+    width: 150vh;
+    height: 98vh;
     margin: auto;
+    background-repeat: no-repeat;
 }

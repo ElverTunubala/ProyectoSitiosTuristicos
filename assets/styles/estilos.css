@@ -1,8 +1,11 @@
 
-.fuente{
+/* .fuente{
     font-family: 'Indie Flower', cursive;
     
-}
+} */
 .fuente2{
     font-size: 100px;
+}
+.fuente{
+    background-color: rgb(25, 23, 23);
 }
