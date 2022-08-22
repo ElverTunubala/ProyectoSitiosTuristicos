@@ -17,7 +17,7 @@ export function pintarResumenCompra(fotoURL,nombremensaje,banderaBoton,banderaPr
     columna2.classList.add("col-12","col-md-6")
 
     let foto=document.createElement("img")
-    foto.classList.add("img-fluid","w-100")
+    foto.classList.add("img-fluid","w-100","mb-4")
     foto.src=fotoURL
 
     let nombre=document.createElement("h3")
@@ -30,7 +30,7 @@ export function pintarResumenCompra(fotoURL,nombremensaje,banderaBoton,banderaPr
     boton.setAttribute("href","../../index.html")
 
     let precio=document.createElement("h3")
-    precio.textContent="percio UND"+precioProducto
+    precio.textContent="precio UND "+precioProducto
 
     let cantidad=document.createElement("h3")
     cantidad.textContent=cantidadProducto

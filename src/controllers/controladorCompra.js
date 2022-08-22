@@ -24,6 +24,9 @@ nombre.textContent=producto.nombre
 
 let precio=document.getElementById("precio")
 precio.textContent=producto.precio
+precio.classList.add("textositios")
+
+
 
 let descripcion=document.getElementById("descripcion")
 descripcion.textContent=producto.descripcion
@@ -46,13 +49,21 @@ let botonagregar = document.getElementById("botonagregar")
 
 botonagregar.addEventListener("click", function(evento){
 
-    let alerta=document.getElementById("alerta")
-    alerta.classList.remove("invisible")
+    Swal.fire({
+        
+        icon: 'success',
+        title: 'Sitio agregado con Exito',
+        showConfirmButton: false,
+        timer: 1500
+      })
 
-    setTimeout(function(){
+    // let alerta=document.getElementById("alerta")
+    // alerta.classList.remove("invisible")
 
-        alerta.classList.add("invisible")
-    },3000)
+    // setTimeout(function(){
+
+    //     alerta.classList.add("invisible")
+    // },3000)
 
     let cantidad= document.getElementById("cantidad").value
     producto.cantidad=cantidad

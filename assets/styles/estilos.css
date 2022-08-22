@@ -9,3 +9,9 @@
 .fuente{
     background-color: rgb(25, 23, 23);
 }
+.textositios{
+    color:#EE7888;
+}
+.nav-item:hover{
+    border-bottom: 2px solid white;
+}

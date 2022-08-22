@@ -9,16 +9,21 @@ if(carrito==null){
 
 }else{
     //el carrito esta lleno
-    
+
+    let total=0;
     //recorro el carrito de compras
     carrito.forEach(function(producto){
 
         let precioProducto=producto.precio.split("$")[1].split("€")[0]
         let cantidadProducto=producto.cantidad
         let subtotal=Number(precioProducto)*Number(cantidadProducto)
+        total=total+subtotal
+
 
        pintarResumenCompra(producto.foto,producto.nombre,false,true,producto.precio,true,producto.cantidad,subtotal)
 
     })
+    let totall=document.getElementById("total")
+    totall.textContent=total
 
 }

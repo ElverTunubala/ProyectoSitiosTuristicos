@@ -35,8 +35,8 @@ export function pintarProductos(productos){
         // 2.5 Creamos el precio
 
         let precio=document.createElement("h2")
-        precio.classList.add("fw-bold")
-        precio.textContent="$"+producto.precio+"€"
+        precio.classList.add("fw-bold","textositios")
+        precio.textContent="$"+producto.precio
 
         // 2.6 Creamos la descripcion 
 
