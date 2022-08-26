@@ -5,7 +5,7 @@ let carrito=JSON.parse(localStorage.getItem('carrito'))
 
 //comparo o pregunto si el carrito esta vacio
 if(carrito==null){
-    pintarResumenCompra('../../assets/img/carrovacio.jpg','Carrito Vacio',true,false,null,false,null,null)
+    pintarResumenCompra('https://cdn.dribbble.com/users/2124240/screenshots/6118828/delete_icon_intraction.gif','Carrito Vacio',true,false,null,false,null,null)
 
 }else{
     //el carrito esta lleno
