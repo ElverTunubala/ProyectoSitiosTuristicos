@@ -26,4 +26,23 @@ if(carrito==null){
     let totall=document.getElementById("total")
     totall.textContent=total
 
+    let eliminar=document.getElementById("botonlimpiar")
+
+    eliminar.addEventListener("click",function(evento){
+        
+        localStorage.clear();
+        location.reload();
+    })
+
+    //funcion para convertir el dolar
+    
+    let dolar=document.getElementById("botondolar")
+    dolar.addEventListener("click",function(evento){
+        
+        let dolarr=total*2
+        console.log("el dolar es: "+dolarr)
+    })
+
+
+
 }

@@ -33,10 +33,10 @@ export function pintarResumenCompra(fotoURL,nombremensaje,banderaBoton,banderaPr
     precio.textContent="precio UND "+precioProducto
 
     let cantidad=document.createElement("h3")
-    cantidad.textContent=cantidadProducto
+    cantidad.textContent="Personas: "+cantidadProducto
 
     let subtotalEtiqueta=document.createElement("h4")
-    subtotalEtiqueta.textContent=subtotal
+    subtotalEtiqueta.textContent="$"+subtotal
 
     //padres e hijos
     columna1.appendChild(foto)
