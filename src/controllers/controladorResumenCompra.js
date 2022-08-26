@@ -29,6 +29,13 @@ if(carrito==null){
     let eliminar=document.getElementById("botonlimpiar")
 
     eliminar.addEventListener("click",function(evento){
+        Swal.fire({
+            // html:'<img src="https://cdn.dribbble.com/users/2124240/screenshots/6118828/delete_icon_intraction.gif" alt="">',
+            icon: 'success',
+            title: 'limpiando.....',
+            showConfirmButton: false,
+            timer: 6000
+          })
         
         localStorage.clear();
         location.reload();
@@ -39,9 +46,40 @@ if(carrito==null){
     let dolar=document.getElementById("botondolar")
     dolar.addEventListener("click",function(evento){
         
-        let dolarr=total*2
+        let dolarr=Math.round(total/4396)
         console.log("el dolar es: "+dolarr)
+        let totalll=document.getElementById("total")
+        totalll.textContent=dolarr+" USD"
+
+        Swal.fire({
+        
+            icon: 'success',
+            title: 'pago en USD',
+            showConfirmButton: false,
+            timer: 1500
+          })
     })
+
+
+    //funcion para convertir el pesos
+    
+    let pesos=document.getElementById("botonpesos")
+    pesos.addEventListener("click",function(evento){
+        
+        
+        let totall=document.getElementById("total")
+        totall.textContent="$"+total
+
+        Swal.fire({
+        
+            icon: 'success',
+            title: 'pago en pesos colombianos',
+            showConfirmButton: false,
+            timer: 1500
+          })
+    })
+
+
 
 
 
